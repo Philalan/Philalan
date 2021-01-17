@@ -10,39 +10,6 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
-
-<!-- Include image link -->
-		
-<script>
-function includeHTML() {
-  var z, i, elmnt, file, xhttp;
-  /*loop through a collection of all HTML elements:*/
-  z = document.getElementsByTagName("*");
-  for (i = 0; i < z.length; i++) {
-    elmnt = z[i];
-    /*search for elements with a certain atrribute:*/
-    file = elmnt.getAttribute("w3-include-html");
-    if (file) {
-      /*make an HTTP request using the attribute value as the file name:*/
-      xhttp = new XMLHttpRequest();
-      xhttp.onreadystatechange = function() {
-        if (this.readyState == 4) {
-          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-          /*remove the attribute, and call this function once more:*/
-          elmnt.removeAttribute("w3-include-html");
-          includeHTML();
-        }
-      }      
-      xhttp.open("GET", file, true);
-      xhttp.send();
-      /*exit the function:*/
-      return;
-    }
-  }
-};
-</script>
-
 	</head>
 	<body class="is-preload">
 
@@ -71,12 +38,66 @@ function includeHTML() {
 						
 
 								<section id="two">
-									<div w3-include-html="gallery3_images.html"></div> 
-
-									<script>
-										includeHTML();
-									</script>
-								</section>
+									<header class="major">
+										<h2>Pastels Gallery</h2>
+									</header>
+									<div class="posts">
+										<article class="work-item">
+											<a href="gallery3/01.jpg" class="image"><img src="gallery3/01.jpg" alt="" /></a>
+											<h3>Fishing boats moored at Padstow</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/02.jpg" class="image"><img src="gallery3/02.jpg" alt="" /></a>
+											<h3>Departing Mevagissey Harbour</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/03.jpg" class="image"><img src="gallery3/03.jpg" alt="" /></a>
+											<h3>Moored boats Mevagissey</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/04.jpg" class="image"><img src="gallery3/04.jpg" alt="" /></a>
+											<h3>Polperro Harbour</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/05.jpg" class="image"><img src="gallery3/05.jpg" alt="" /></a>
+											<h3>Fishing boat Bono Brittany</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/06.jpg" class="image"><img src="gallery3/06.jpg" alt="" /></a>
+											<h3>Tide out Bono Brittany</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/07.jpg" class="image"><img src="gallery3/07.jpg" alt="" /></a>
+											<h3>Village of Sanvensa (South West France)</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/08.jpg" class="image"><img src="gallery3/08.jpg" alt="" /></a>
+											<h3>West Country river</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/09.jpg" class="image"><img src="gallery3/09.jpg" alt="" /></a>
+											<h3>Hill top castle of Najac south west France</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/10.jpg" class="image"><img src="gallery3/10.jpg" alt="" /></a>
+											<h3>Country lane</h3>
+											<p></p>
+										</article>
+										<article class="work-item">
+											<a href="gallery3/11.jpg" class="image"><img src="gallery3/11.jpg" alt="" /></a>
+											<h3>Moored yachts Brittany</h3>
+											<p></p>
+										</article>
+									</div>
 								</section>
 
 						</div>
