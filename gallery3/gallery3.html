@@ -96,6 +96,24 @@
 										</article>
 									</div>
 								</section>
+<div id="element"></div>
+<script>
+        var element = document.getElementById('element');
+        var settings = {"widgetId":null,"widgetOrigin":null,"icon":6,"text":"To Top","buttonDivider1":null,"buttonColor":"rgb(245, 106, 106)","textColor":"#ffffff","fontWeight":"bold","buttonDivider2":null,"size":14,"shape":0,"layout":"horizontal","type":"floating","position":["right","bottom"],"offset":10,"scrollPositionToDisplay":0,"scrollingSpeed":0.6,"settingsDivider":null,"displayPages":"allPages","displayExcludedPages":[],"displaySpecificPages":[],"displayDevices":["desktop","tablet","mobile"],"borderEnabled":false,"borderWidth":2,"borderColor":"#000000"};
+
+        settings.showElfsightLogo = false;
+
+        window.eapps = {
+            apps: {
+                register(name, Driver) {
+                    var driver = new Driver();
+
+                    driver.initWidget(element, settings)
+                }
+            }
+        }
+    </script>
+<script src="https://static.elfsight.com/apps/back-to-top/release/77881873-5fe1-41d5-80d6-86550f15a9f4/app/backToTop.js"></script>
 
 						</div>
 					</div>
